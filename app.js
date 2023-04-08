@@ -13,7 +13,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
 mongoURI = "mongodb+srv://thenamudhan111:amudhan11@cluster0.mqxlivp.mongodb.net/todolistDB"
-mongoose.connect(process.env.mongoURI)
+mongoose.connect(mongoURI)
 
 
 const itemsSchema = {
